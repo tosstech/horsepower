@@ -1,0 +1,180 @@
+@import "./theme.less";
+
+#tag_list{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .tag_nav{
+        text-align: center;
+        line-height: 100%;
+        color: @main_color;
+        padding: 0 2%;
+        margin-bottom: 0.5em;
+        .anticon{
+            font-size: 3em;
+        }
+    }
+    li{
+        width: 47%;
+        margin-left: 2%;
+        float: left;
+        overflow: hidden;
+        .tag_item{
+            position: relative;
+            .ImgBox{
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .tag_num{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(14,49,89,90%);
+                padding: 0.3em 0.5em;
+                padding-left: 0.7em;
+                border-radius: 15px 0 10px 0;
+                .anticon{
+                    color:@aux_color;
+                    font-size: 1.2em;
+                    padding-top: 0.2em;
+                }
+                span{
+                    color:#FFF;
+                }
+            }
+        }
+        .tag_title{
+            padding-left: 5px;
+            margin-top: 0.2em;
+            h1{
+                color: @text_color !important;
+            }
+        }
+    }
+}
+
+#tag_play{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    li{
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 4em;
+        .tag_item{
+            position: relative;
+            .ImgBox{
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .tag_title{
+                width: 90%;
+                margin: 0 5%;
+                background: @bg_color;
+                position: absolute;
+                bottom: 0;
+                padding: 0.5em 1em;
+                text-align: left;
+                border-radius: 10px;
+                margin-bottom: -2.5em;
+                box-shadow: 0px 2px 10px #888888;
+                .tag_title_text{
+                    width: calc(100% - 6em);
+                    float: left;
+                    font-size: 1.2em;
+                    word-break: break-all;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
+                .recomand_star{
+                    float: right;
+                    margin-top: 0.2em;
+                    .anticon{
+                        font-size: 1em !important;
+                        margin-right: 0.1em;
+                        color: @aux_color;
+                    }
+                }
+                .tag_lab{
+                    border-top: 1px solid darken(@bg_color,20%);
+                    clear: both;
+                    margin-top: 0.5em;
+                    padding-top: 0.5em;
+                    .anticon{
+                        font-size: 1.5em;
+                        float: left;
+                    }
+                    .tag_lab_txt{
+                        float: left;
+                        margin-top: 0.2em;
+                        padding-left: 0.5em;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+
+#tag_rest{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    >li{
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 4em;
+        background: darken(@bg_color,5%);
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px #888888;
+        .tag_item{
+            width: 90%;
+            position: relative;
+            
+            .ImgBox{
+                border-radius: 10px 0 10px 0;
+                overflow: hidden;
+            }
+            .tag_title{
+                width: 100%;
+                font-size: 1.2em;
+                padding: 0.5em 1em;
+                text-align: left;
+                margin-bottom: -2.5em;
+            }
+            .tag_item_list{
+                width: 100%;
+                li{
+                    width: 23%;
+                    height: 4em;
+                    float: left;
+                    margin-right: 2%;
+                    border-radius: 5px;
+                    img{
+                        width: 100%;
+                        height: 3em;
+                        border-radius: 5px;
+                    }
+                    .tag_room_price{
+                        color: @aux_color;
+                        text-align: center;
+                        font-size: 0.8em !important;
+                    }
+                }
+                .tag_room_num{
+                    background: @main_color;
+                    height: 3em;
+                    line-height: 3em;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 1em;
+                }
+            }
+        }    
+    }
+}
+
+

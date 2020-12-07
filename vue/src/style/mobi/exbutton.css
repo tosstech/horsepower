@@ -1,0 +1,185 @@
+li {
+  list-style-type: none;
+}
+h1 {
+  color: #FFF;
+  font-size: 1.2em;
+  text-align: left;
+}
+h2 {
+  color: #0e3159;
+  font-size: 1.5em;
+  text-align: left;
+  border-left: 4px solid #da414b;
+  padding-left: 0.2em;
+  line-height: 100%;
+  margin: 1em 0 0.5em 0;
+}
+h3 {
+  color: #FFF;
+  margin: 0 0 1em 0;
+}
+p {
+  text-indent: 2em;
+}
+body {
+  background: #ececec;
+  color: #20272e;
+}
+#exbuttom {
+  position: relative;
+  /* 设置持续时间和动画函数 */
+}
+#exbuttom .bt_top,
+#exbuttom .bt_left,
+#exbuttom .bt_right,
+#exbuttom .bt_down {
+  box-shadow: 0px 5px 30px #000;
+}
+#exbuttom .bt_top {
+  width: calc(2em*1.732);
+  height: 2em;
+  position: absolute;
+  top: 1em;
+  left: calc(2em*1.732/2 + 0.2em);
+}
+#exbuttom .bt_left {
+  width: calc(2em*1.732);
+  height: 2em;
+  position: absolute;
+  top: calc(4em + 0.5em);
+  left: 0;
+}
+#exbuttom .bt_right {
+  width: calc(2em*1.732);
+  height: 2em;
+  position: absolute;
+  top: calc(4em + 0.5em);
+  left: 3.864em;
+}
+#exbuttom .bt_down {
+  width: calc(2em*1.732);
+  height: 2em;
+  position: absolute;
+  top: calc(7em + 1em);
+  left: calc(2em*1.732/2 + 0.2em);
+}
+#exbuttom .bt_set {
+  width: calc(2em*1.732);
+  height: 2em;
+  display: inline-block;
+  background-color: #ececec;
+  opacity: 0.95;
+}
+#exbuttom .bt_set::before {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(-60deg);
+}
+#exbuttom .bt_set::after {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(60deg);
+}
+#exbuttom .main_bt_set {
+  width: calc(2em*1.732);
+  height: 2em;
+  display: inline-block;
+  background-color: #da414b;
+}
+#exbuttom .main_bt_set::before {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(-60deg);
+}
+#exbuttom .main_bt_set::after {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(60deg);
+}
+#exbuttom .rounded,
+#exbuttom .rounded::before,
+#exbuttom .rounded::after {
+  border-radius: 0.2em;
+  box-sizing: border-box;
+}
+#exbuttom .bt_icon {
+  position: absolute;
+  z-index: 1500;
+  margin-left: 0.732em;
+}
+#exbuttom .bt_icon .anticon {
+  font-size: 2em !important;
+  color: #4a5a6a;
+}
+#exbuttom .main_bt_icon {
+  position: absolute;
+  z-index: 1500;
+  margin-left: 0.732em;
+}
+#exbuttom .main_bt_icon .anticon {
+  font-size: 2em !important;
+  color: #FFF;
+}
+#exbuttom .car_bt {
+  position: absolute;
+  z-index: 1500;
+  margin-left: 0.7em;
+}
+#exbuttom .car_bt .anticon {
+  font-size: 2.3em !important;
+  color: #4a5a6a;
+}
+#exbuttom .bt-top-enter-active {
+  transition: all 0.3s ease;
+}
+#exbuttom .bt-top-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+#exbuttom .bt-top-enter,
+#exbuttom .bt-top-leave-to {
+  transform: translate(10px, 10px);
+  opacity: 0;
+}
+#exbuttom .bt-left-enter-active {
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+#exbuttom .bt-left-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition-delay: 0.4s;
+}
+#exbuttom .bt-left-enter,
+#exbuttom .bt-left-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+#exbuttom .bt-down-enter-active {
+  transition: all 0.3s ease;
+  transition-delay: 0.4s;
+}
+#exbuttom .bt-down-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition-delay: 0.6s;
+}
+#exbuttom .bt-down-enter,
+#exbuttom .bt-down-leave-to {
+  transform: translate(10px, -10px);
+  opacity: 0;
+}

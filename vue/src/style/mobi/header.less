@@ -1,0 +1,36 @@
+@import "./theme.less";
+
+#header{
+    width: 100%;
+    background: @main_color;
+    position: fixed;
+    z-index: 120;
+    top: 0;
+    margin: 0;
+    .header_top{
+        padding: 0.5em 3%;
+        text-align: left;
+    }
+    .location{
+        color: #FFF;
+        height: 25px;
+        line-height: 25px;
+    }
+    input {
+        width: 100%;
+        background: #FFF;
+        opacity: 0.5;
+        border: none;
+        height: 25px;
+        color: @text_color;
+        border-radius: 15px;
+        font-size: 0.9em;
+        .ant-input:focus{
+            box-shadow: none;
+        }
+        &::placeholder{
+            color:lighten(#000,40%);
+        }
+    }
+}
+

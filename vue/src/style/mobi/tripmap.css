@@ -1,0 +1,256 @@
+li {
+  list-style-type: none;
+}
+h1 {
+  color: #FFF;
+  font-size: 1.2em;
+  text-align: left;
+}
+h2 {
+  color: #0e3159;
+  font-size: 1.5em;
+  text-align: left;
+  border-left: 4px solid #da414b;
+  padding-left: 0.2em;
+  line-height: 100%;
+  margin: 1em 0 0.5em 0;
+}
+h3 {
+  color: #FFF;
+  margin: 0 0 1em 0;
+}
+p {
+  text-indent: 2em;
+}
+body {
+  background: #ececec;
+  color: #20272e;
+}
+#trip_map {
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Standard syntax */
+  /* Standard syntax */
+}
+#trip_map .map_inner {
+  background: #0e3159;
+  position: relative;
+  /* Standard syntax */
+}
+#trip_map .map_inner .map {
+  background: #FFF;
+  border-radius: 0 0 10em 0;
+  box-shadow: 5px 5px 20px #1a1a1a;
+  overflow: hidden;
+}
+#trip_map .map_inner .map_search {
+  width: 100%;
+  background: rgba(14, 49, 89, 0.9);
+  padding: 0.5em 0;
+}
+#trip_map .map_inner .map_search .map_search_bt {
+  width: 35px;
+  height: 35px;
+}
+#trip_map .map_inner .map_search .map_search_bt .anticon {
+  font-size: 25px;
+  margin-top: 5px;
+}
+#trip_map .map_inner .map_search .map_search_box {
+  width: calc(100% - 70px);
+}
+#trip_map .map_inner .map_op {
+  clear: both;
+  text-align: center;
+  margin-top: 2em;
+  color: #FFF;
+}
+#trip_map .map_inner .map_op .map_op_item {
+  width: 2.5em;
+  height: 2.5em;
+  margin: auto;
+  position: relative;
+}
+#trip_map .map_inner .map_op .map_op_item .anticon {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+#trip_map .map_inner .map_op .map_op_item .trip_map_swich {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background: #90c421;
+  float: left;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  margin-top: -0.2em;
+  margin-right: -0.2em;
+}
+#trip_map .map_inner .map_op .bt_sos {
+  color: #da414b;
+}
+#trip_map .map_inner .map_op .bt_sos .anticon {
+  color: #da414b;
+}
+#trip_map .map_inner .map_op .bt_sos_on {
+  background: #da414b;
+  width: 5em;
+  height: 5em;
+  border-radius: 2.5em;
+  color: #ffffff;
+  margin: auto;
+  margin-top: -0.5em;
+  padding-top: 0.5em;
+  -webkit-animation: sosflicker 0.7s infinite;
+  /* Chrome, Safari, Opera */
+  animation: sosflicker 0.7s infinite;
+}
+#trip_map .map_inner .map_op .bt_sos_on .anticon {
+  color: #ffffff;
+}
+#trip_map .map_inner .bt_open {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15em;
+  margin-right: 0.3em;
+}
+#trip_map .map_inner .bt_open .anticon {
+  font-size: 2em;
+  color: #da414b;
+}
+#trip_map .map_inner .bt_open_sos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15.4em;
+  margin-right: 0.3em;
+}
+#trip_map .map_inner .bt_open_sos .anticon {
+  font-size: 2em;
+  color: #da414b;
+}
+@-webkit-keyframes sosflicker {
+  0% {
+    background: #da414b;
+  }
+  100% {
+    background: rgba(218, 65, 75, 0.2);
+  }
+}
+@keyframes sosflicker {
+  0% {
+    background: #da414b;
+  }
+  100% {
+    background: rgba(218, 65, 75, 0.2);
+  }
+}
+#trip_map .open {
+  -webkit-animation: openmove 1s infinite;
+  /* Chrome, Safari, Opera */
+  animation: openmove 1s infinite;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 和 Chrome */
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes openmove {
+  0% {
+    margin-top: 0;
+  }
+  90% {
+    margin-top: -189.5px;
+  }
+  100% {
+    margin-top: -199.5px;
+  }
+}
+@keyframes openmove {
+  0% {
+    margin-top: 0;
+  }
+  90% {
+    margin-top: -189.5px;
+  }
+  100% {
+    margin-top: -199.5px;
+  }
+}
+#trip_map .close {
+  -webkit-animation: closemove 1s infinite;
+  /* Chrome, Safari, Opera */
+  animation: closemove 1s infinite;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 和 Chrome */
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes closemove {
+  0% {
+    margin-top: -199.5px;
+  }
+  90% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes closemove {
+  0% {
+    margin-top: -199.5px;
+  }
+  90% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.ant-modal-confirm-body > .anticon {
+  color: #da414b !important;
+}
+.ant-modal-confirm-body > .anticon svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+.ant-btn-primary {
+  border-color: #0e3159 !important;
+}
+.ant-message-notice .anticon {
+  display: none;
+}
+.warning_img {
+  float: left;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+}
+.warning_text {
+  float: left;
+  padding-top: 0.25em;
+}
+.ant-message-notice-content {
+  padding: 0.5em 20%;
+}
+/*高德地图*/
+.amap-geolocation-con {
+  bottom: 70px !important;
+}
+.amap-geolocation-con .amap-geo {
+  background: url('../../assets/bt_local.png') 50% 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(14, 49, 89, 0.8) !important;
+}
+.el-vue-search-box-container {
+  width: 100% !important;
+  height: 35px !important;
+}
+.el-vue-search-box-container .search-tips {
+  border: none !important;
+}
